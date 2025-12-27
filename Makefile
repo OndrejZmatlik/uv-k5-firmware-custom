@@ -243,10 +243,10 @@ OBJCOPY = arm-none-eabi-objcopy
 SIZE = arm-none-eabi-size
 
 ifeq ($(ENABLE_FEAT_F4HWN),1)
-	AUTHOR_STRING_1 ?= EGZUMER
+	AUTHOR_STRING_1 ?= FarSniper
 	VERSION_STRING_1 ?= v0.22
 
-	AUTHOR_STRING_2 ?= F4HWN
+	AUTHOR_STRING_2 ?= FARHIVE
 	VERSION_STRING_2 ?= v4.3
 
 	EDITION_STRING ?= Custom
@@ -256,7 +256,7 @@ ifeq ($(ENABLE_FEAT_F4HWN),1)
 
 	SQL_TONE ?= 550 # For SA818, use 600 and python3 sa818.py --port /dev/ttyS2 radio --frequency 434.975 --ctcss 71.9 --tail Open
 else
-	AUTHOR_STRING ?= EGZUMER
+	AUTHOR_STRING ?= FarSniper
 	# the user might not have/want git installed
 	# can set own version string here (max 7 chars)
 	ifneq (, $(shell $(WHERE) git))
